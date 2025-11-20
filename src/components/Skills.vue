@@ -5,11 +5,11 @@
       <div 
         v-for="skill in skills" 
         :key="skill.name"
-        class="group flex flex-1 flex-col gap-4 rounded-lg border border-slate-200 bg-[#FFF9F0] p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-md dark:bg-slate-800 dark:border-slate-700"
+        class="group flex flex-1 flex-col gap-4 rounded-2xl border border-white/20 dark:border-white/10 bg-white/60 dark:bg-black/40 backdrop-blur-xl p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:bg-white/80 dark:hover:bg-black/60"
       >
-        <span class="material-symbols-outlined text-3xl text-primary dark:text-card-border-hover">{{ skill.icon }}</span>
+        <span class="material-symbols-outlined text-3xl text-primary dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">{{ skill.icon }}</span>
         <div class="flex flex-col gap-1">
-          <h3 class="text-base font-bold leading-tight dark:text-white">{{ skill.name }}</h3>
+          <h3 class="text-base font-bold leading-tight text-slate-900 dark:text-white font-display">{{ skill.name }}</h3>
           <p class="text-sm font-normal leading-normal text-secondary dark:text-slate-400">{{ skill.category }}</p>
         </div>
       </div>

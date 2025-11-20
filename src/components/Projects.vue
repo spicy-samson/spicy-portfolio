@@ -5,23 +5,23 @@
       <div 
         v-for="project in projects" 
         :key="project.title"
-        class="flex flex-col bg-[#FFF9F0] dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden group hover:shadow-md transition-shadow"
+        class="flex flex-col bg-white/60 dark:bg-black/40 backdrop-blur-xl rounded-2xl border border-white/20 dark:border-white/10 shadow-sm overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       >
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-lg font-bold dark:text-white">{{ project.title }}</h3>
-          <p class="text-sm text-secondary dark:text-slate-400 mt-2 flex-grow">{{ project.description }}</p>
-          <div class="flex flex-wrap gap-2 mt-4">
+        <div class="p-8 flex flex-col flex-grow gap-4">
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white font-display">{{ project.title }}</h3>
+          <p class="text-base text-secondary dark:text-slate-300 flex-grow leading-relaxed">{{ project.description }}</p>
+          <div class="flex flex-wrap gap-2 mt-2">
             <span 
               v-for="tag in project.tags" 
               :key="tag"
-              class="text-xs font-semibold text-primary dark:text-gray-200 bg-primary/10 dark:bg-gray-700 px-2 py-1 rounded-full"
+              class="text-xs font-semibold text-primary dark:text-blue-300 bg-primary/10 dark:bg-blue-500/20 px-3 py-1 rounded-full border border-primary/10 dark:border-blue-500/20"
             >
               {{ tag }}
             </span>
           </div>
         </div>
-        <a class="flex items-center justify-center gap-2 text-sm font-semibold text-primary dark:text-blue-400 bg-slate-50 dark:bg-slate-800/50 p-4 border-t border-slate-200 dark:border-slate-700 group-hover:bg-primary/5 dark:group-hover:bg-slate-700 transition-colors" href="#">
-          View Repository <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+        <a class="flex items-center justify-center gap-2 text-sm font-semibold text-primary dark:text-blue-400 bg-white/50 dark:bg-white/5 p-4 border-t border-white/20 dark:border-white/10 group-hover:bg-primary/5 dark:group-hover:bg-white/10 transition-colors" href="#">
+          View Repository <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 text-lg">arrow_forward</span>
         </a>
       </div>
     </div>

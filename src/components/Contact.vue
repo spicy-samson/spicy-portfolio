@@ -31,21 +31,21 @@
       </div>
 
       <!-- Contact Form -->
-      <div class="flex-1 w-full bg-[#FFF9F0] dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-        <form class="flex flex-col gap-4" @submit.prevent>
-          <div class="flex flex-col gap-1">
-            <label class="text-sm font-bold text-slate-900 dark:text-white" for="name">Name</label>
-            <input class="h-11 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 px-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="name" placeholder="Your Name" type="text" />
+      <div class="flex-1 w-full bg-white/60 dark:bg-black/40 backdrop-blur-xl p-8 rounded-2xl border border-white/20 dark:border-white/10 shadow-lg">
+        <form class="flex flex-col gap-5" @submit.prevent>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-1" for="name">Name</label>
+            <input class="h-11 w-full rounded-xl border border-white/20 dark:border-white/10 bg-white/50 dark:bg-white/5 px-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 text-slate-900 dark:text-white" id="name" placeholder="Your Name" type="text" />
           </div>
-          <div class="flex flex-col gap-1">
-            <label class="text-sm font-bold text-slate-900 dark:text-white" for="email">Email</label>
-            <input class="h-11 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 px-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="email" placeholder="your@email.com" type="email" />
+          <div class="flex flex-col gap-1.5">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-1" for="email">Email</label>
+            <input class="h-11 w-full rounded-xl border border-white/20 dark:border-white/10 bg-white/50 dark:bg-white/5 px-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 text-slate-900 dark:text-white" id="email" placeholder="your@email.com" type="email" />
           </div>
-          <div class="flex flex-col gap-1">
-            <label class="text-sm font-bold text-slate-900 dark:text-white" for="message">Message</label>
-            <textarea class="h-32 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 p-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none" id="message" placeholder="How can I help you?"></textarea>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-1" for="message">Message</label>
+            <textarea class="h-32 w-full rounded-xl border border-white/20 dark:border-white/10 bg-white/50 dark:bg-white/5 p-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all resize-none placeholder:text-slate-400 dark:placeholder:text-slate-600 text-slate-900 dark:text-white" id="message" placeholder="How can I help you?"></textarea>
           </div>
-          <button class="mt-2 h-11 w-full rounded-lg bg-primary hover:bg-primary-dark text-white font-bold transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5">
+          <button class="mt-2 h-12 w-full rounded-full bg-primary hover:bg-primary-dark text-white font-bold transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-95">
             Send Message
           </button>
         </form>
