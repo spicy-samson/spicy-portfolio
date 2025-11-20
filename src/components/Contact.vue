@@ -1,28 +1,58 @@
 <template>
-  <footer class="border-t border-primary/20 py-12 px-4" id="contact">
-    <div class="flex flex-col items-center text-center gap-6">
-      <div class="flex flex-col gap-2">
-        <h2 class="text-2xl font-bold">Get In Touch</h2>
-        <p class="text-primary/80 dark:text-gray-300">I'm currently open to new opportunities. Feel free to reach out!</p>
+  <footer class="py-12 px-4 w-full">
+    <div class="flex flex-col md:flex-row gap-12 md:gap-24 items-start justify-center max-w-5xl mx-auto">
+      <!-- Contact Info -->
+      <div class="flex flex-col gap-6 flex-1 text-center md:text-left w-full">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-3xl font-bold">Get In Touch</h2>
+          <p class="text-secondary dark:text-slate-400">I'm currently open to new opportunities. Feel free to reach out!</p>
+        </div>
+        
+        <div class="flex flex-col gap-4 items-center md:items-start">
+          <a class="flex items-center gap-3 text-lg font-semibold text-primary dark:text-card-border-hover hover:underline" href="mailto:samsonpaulinoedsel@email.com">
+            <span class="material-symbols-outlined">mail</span>
+            samsonpaulinoedsel@email.com
+          </a>
+          
+          <div class="flex items-center gap-6 text-primary dark:text-gray-300 mt-2">
+            <a aria-label="GitHub Profile" class="hover:text-card-border-hover transition-colors p-2 hover:bg-primary/10 rounded-full" href="https://github.com/spicy-samson">
+              <svg aria-hidden="true" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                <path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a aria-label="LinkedIn Profile" class="hover:text-card-border-hover transition-colors p-2 hover:bg-primary/10 rounded-full" href="https://www.linkedin.com/in/paulino-edsel-samson-412a0a316/">
+              <svg aria-hidden="true" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="text-xs text-secondary/60 dark:text-slate-500 mt-auto pt-8">© 2025 Paulino Samson. All rights reserved.</p>
       </div>
-      <a class="text-lg font-semibold text-primary dark:text-card-border-hover hover:underline" href="mailto:jane.doe@email.com">samsonpaulinoedsel@email.com</a>
-      <div class="flex items-center gap-6 text-primary dark:text-gray-300">
-        <a aria-label="GitHub Profile" class="hover:text-card-border-hover transition-colors" href="https://github.com/spicy-samson">
-          <svg aria-hidden="true" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
-            <path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
-          </svg>
-        </a>
-        <a aria-label="LinkedIn Profile" class="hover:text-card-border-hover transition-colors" href="https://www.linkedin.com/in/paulino-edsel-samson-412a0a316/">
-          <svg aria-hidden="true" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-          </svg>
-        </a>
+
+      <!-- Contact Form -->
+      <div class="flex-1 w-full bg-[#FFF9F0] dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+        <form class="flex flex-col gap-4" @submit.prevent>
+          <div class="flex flex-col gap-1">
+            <label class="text-sm font-bold text-slate-900 dark:text-white" for="name">Name</label>
+            <input class="h-11 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 px-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="name" placeholder="Your Name" type="text" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="text-sm font-bold text-slate-900 dark:text-white" for="email">Email</label>
+            <input class="h-11 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 px-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="email" placeholder="your@email.com" type="email" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="text-sm font-bold text-slate-900 dark:text-white" for="message">Message</label>
+            <textarea class="h-32 w-full rounded-lg border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-900 p-4 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none" id="message" placeholder="How can I help you?"></textarea>
+          </div>
+          <button class="mt-2 h-11 w-full rounded-lg bg-primary hover:bg-primary-dark text-white font-bold transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5">
+            Send Message
+          </button>
+        </form>
       </div>
-      <p class="text-xs text-primary/60 dark:text-gray-500 mt-4">© 2025 Paulino Samson. All rights reserved.</p>
     </div>
   </footer>
 </template>
 
 <script setup>
 </script>
-
