@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-4">
+  <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-4">
     <a class="flex items-center gap-3 text-primary dark:text-white" href="#home">
       <span class="material-symbols-outlined text-2xl">
         data_object

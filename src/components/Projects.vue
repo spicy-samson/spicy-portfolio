@@ -1,15 +1,15 @@
 <template>
-  <section class="flex flex-col gap-8" id="projects">
+  <section class="flex flex-col gap-8">
     <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] px-4">Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
       <div 
         v-for="project in projects" 
         :key="project.title"
-        class="flex flex-col bg-white dark:bg-gray-800 rounded-lg border border-primary/20 dark:border-primary/50 shadow-sm overflow-hidden group"
+        class="flex flex-col bg-[#FFF9F0] dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden group hover:shadow-md transition-shadow"
       >
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-lg font-bold dark:text-white">{{ project.title }}</h3>
-          <p class="text-sm text-primary/80 dark:text-gray-300 mt-2 flex-grow">{{ project.description }}</p>
+          <p class="text-sm text-secondary dark:text-slate-400 mt-2 flex-grow">{{ project.description }}</p>
           <div class="flex flex-wrap gap-2 mt-4">
             <span 
               v-for="tag in project.tags" 
@@ -20,7 +20,7 @@
             </span>
           </div>
         </div>
-        <a class="flex items-center justify-center gap-2 text-sm font-semibold text-primary dark:text-card-border-hover bg-primary/5 dark:bg-gray-700/50 p-4 border-t border-primary/20 dark:border-primary/50 group-hover:bg-primary/10 dark:group-hover:bg-gray-700 transition-colors" href="#">
+        <a class="flex items-center justify-center gap-2 text-sm font-semibold text-primary dark:text-blue-400 bg-slate-50 dark:bg-slate-800/50 p-4 border-t border-slate-200 dark:border-slate-700 group-hover:bg-primary/5 dark:group-hover:bg-slate-700 transition-colors" href="#">
           View Repository <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
         </a>
       </div>
