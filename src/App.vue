@@ -14,7 +14,7 @@
       <Header />
       
       <main class="w-full">
-        <section id="home" class="snap-start h-dvh w-full flex flex-col">
+        <section id="home" class="snap-start h-dvh w-full flex flex-col items-center justify-center pt-16 md:pt-0">
           <Hero />
         </section>
         
