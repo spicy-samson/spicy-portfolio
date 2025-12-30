@@ -9,7 +9,7 @@
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
             Get In Touch
           </h2>
-          <p class="text-slate-700 dark:text-slate-200">
+          <p class="text-slate-700 dark:text-white">
             I'm currently open to new opportunities. Feel free to reach out!
           </p>
         </div>
